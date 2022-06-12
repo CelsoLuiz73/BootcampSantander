@@ -1,0 +1,54 @@
+Lógica de Programação Essencial - Denilson Bonatti
+
+
+1 - Criar algoritmo do seu dia (deste que vc acordou até a hora que vc foi dormir)
+2 - Resolva todos os problemas em menos de uma hora(https://studio.code.org/s/mc/lessons/1/levels/1)
+3 - Vc vai resolver o problema e vai escrever um pseudocógido e indicar para alguém como ela vai
+resolver este problema (https://rachacuca.com.br/jogos/pinguins-numa-fria/)
+
+Parei em - aprendendo fluxograma, variáveis e constantes
+
+3 - @digitalinnovation.one
+4 - @denilsonbonatti
+
+====
+
+10jun2022
+
+Exercício:
+
+Além de receber as 4 notas, vai exibir o total do cálculo das notas (nota1, nota3...) - OK
+Parei em tomadas de decisões e expressões
+
+11jun2022
+
+Expressões Aritméticos (2 + 2 = 4);
+Expressôes Literais (nome = "José")
+Operadores relacionais (Verdadeiro/Falso) (5 > 1 = Verdadeiro)
+Tomadas de Decisão (Vc tem cartão de crédito?(sim/não)(se sim -> digitar o número do cartão)(se não -> não fazemos vendas sem cartão de crédito)
+
+Ex:
+Declarar 4 variáveis (jan,fev,mar,abr); variável média aritmética dos meses, 
+Nessas variáveis declara quanto o vendedor vendeu por mês;
+se a média for maior que 5mil, (parabéns vc vai receber um abono de 10%)
+se a média for menor que 5mil, (vc receberá um abono de 3%)
+
+Parei em estrutura de repetição
+
+12jun2022
+
+Estrutura de repetição
+
+Estrutura de repetição junto com a tomada de decisão são 70% da programação
+
+
+echo "# BootcampSantander" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/CelsoLuiz73/BootcampSantander.git
+git push -u origin master
+
+Santander Bootcamp Mobile Developer (Android/Kotlin)
+
