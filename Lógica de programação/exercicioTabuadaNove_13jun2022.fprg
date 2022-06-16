@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="celso"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-06-14 12:15:28 "/>
+        <attribute name="created" value="Y2Vsc287REVTS1RPUC03OTFDQjNQOzIwMjItMDYtMTM7IjExOjM0OjAyICI7MjcyNA=="/>
+        <attribute name="edited" value="Y2Vsc287REVTS1RPUC03OTFDQjNQOzIwMjItMDYtMTQ7IjEyOjE1OjI4ICI7MjsyODQy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, limite, sequencia" type="Integer" array="False" size=""/>
+            <assign variable="numero" expression="9"/>
+            <assign variable="sequencia" expression="1"/>
+            <assign variable="limite" expression="98"/>
+            <while expression="numero&lt;=limite">
+                <output expression="&quot;9 x &quot; &amp; sequencia &amp; &quot; = &quot; &amp; numero" newline="True"/>
+                <assign variable="sequencia" expression="sequencia+1"/>
+                <assign variable="numero" expression="numero + 9"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

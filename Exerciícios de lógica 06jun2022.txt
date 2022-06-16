@@ -41,7 +41,27 @@ Estrutura de repetição
 
 Estrutura de repetição junto com a tomada de decisão são 70% da programação
 
+13jun2022
 
+...continua estrutura de repetição
+
+Ex: na estrutura fazer a tabuada do 9
+
+14jun2022
+
+parei em trabalhando com laços de repetição em Portugol
+
+16jun2022
+
+contador ++ é igual (contador=contador+1)
+
+rever aula - aplicação prática com matrizes e vetores
+
+
+
+
+
+====================
 echo "# BootcampSantander" >> README.md
 git init
 git add README.md
@@ -52,3 +72,71 @@ git push -u origin master
 
 Santander Bootcamp Mobile Developer (Android/Kotlin)
 
+=====
+
+Solução GitHu
+
+Erro -
+this is my repository https://github.com/kiotie32/artbit-text.git when I do
+
+$ git push -u origin master
+remote: Repository not found.
+fatal: repository 'https://github.com/kiotie32/arbit-text.git/' not found
+
+solução:
+I had the same problem but this command resolved it.
+
+Replace:
+
+git push -u origin master
+with following command:
+
+git push -u origin main
+or
+
+git push -f origin main
+
+
+=====
+Responsabilidades e atribuições
+
+Coisas que você precisa fazer pra mandar muito bem aqui:
+Participar de análises junto ao time, quanto as sugestões de melhorias dadas por fominhas, restaurantes, fomers e hunters;
+Programar novas funcionalidades e ajustes solicitados pensando em desempenho e escalabilidade das aplicações já existentes;
+Entregar software de qualidade, buscando boas práticas de desenvolvimento;
+Proatividade para encontrar soluções alternativas/eficazes - e não só as saídas mais fáceis!
+Estar sempre disposto a pesquisar e se atualizar sempre sobre novidades da área.
+Requisitos e qualificações
+
+Antes de qualquer coisa, você precisa ser MUITO gente boa e teamplayer!
+
+Mas Também é Importante Que Tenha
+Conhecimento no desenvolvimento de aplicativos nativos Android (Kotlin/Java);
+Conhecimento no Android SDK (Android Components como: Lifecycle, Service, ContentProvider, Broadcast, etc);
+Consumo de APIs REST;
+Ferramentas de versionamento de código e desenvolvimento colaborativo;
+Android Jetpack Components (ViewModel, Room, LiveData, Databinding, Navigation).
+Será Um Diferencial
+Conhecer e ter aplicado alguma arquitetura de software (MVVM, MVP, MVI, etc);
+Conhecer Clean Architecture, princípios SOLID e padrões de projeto;
+Conhecer UI customizada;
+Conhecer testes unitários, de integração e instrumentados.
+Informações adicionais
+
+Porquê Você Vai Amar Trampar Aqui
+Opção de trampo full remoto
+Bônus por metas atingidas
+Cupons mensais pra pedir no aiq
+Descontos em cursos
+App de saúde mental (terapia online)
+Plano odontológico
+Plano de saúde
+Vale alimentação
+Vale transporte
+Seguro de vida
+Dois monitores pra trabalho
+Cafézin expresso e moído na hora
+Uma cultura de autonomia e diversidade
+Não temos nenhum dress code
+E a chance de você crescer aqui dentro é imensa!
+Deu match? Se inscreve aí <3
