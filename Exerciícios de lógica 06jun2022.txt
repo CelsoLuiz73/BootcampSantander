@@ -57,6 +57,475 @@ contador ++ é igual (contador=contador+1)
 
 rever aula - aplicação prática com matrizes e vetores
 
+---
+
+Desenvolviemnto Android
+
+Desenvolvimento Híbrido: Uma linguagem está alinhada a um Framework:
+Flutter / Dart
+React Native / JavaScript
+summery / C#
+
+Kotlin Foundation (JetBrains / Google)
+
+KMM - Kotlin Mobile Multiplataform
+
+smart casts - conversão
+
+null safty - só tem null pointer exception qdo vc quer.
+
+API'S específicas do AndroidX Kotlin (KTX, corrotinas etc) N/A (Java);
+Projetos de várias platafromas; N/A
+Jetpack Compose; N/A
+
+Constantes que permite que a gente acesse o valor máximo que um tipo de dado pode receber:
+println(Int.MAX_VALUE)
+println(Float.MAX_VALUE)
+println()(Long.MAX_VALUE)
+println(Byte.MAX_VALUE)
+println(Short.MAX_VALUE)
+
+Converter tipos de dados:
+toByte()
+toShort()
+toInt()
+toLong()
+toFloat()
+toDouble()
+toChar()
+
+Palavras reservadas Kotlin:
+var - mutável
+val - imutável (similar ao final em Java)
+Const Val - imutável (SNAKE-CASE): Constante cujo valor é atribuído durante compilação. Declarada dentro de um companion object.
+dentro da função Main, tem que ser um val, se está fora, Const Val pode ser acessado de qualquer ponto do código.
+
+var currentAge = 22
+OBS: Neste caso, atribuímos um valor para váriavel, mas não definimos o tipo. O Kotlin entende que o tipo é um inteiro "Int").
+
+var currentAge:Int?
+currentAge = null ou 22
+OBS: Neste caso, atribuímos um tipo para a variável, que pode receber um inteiro "Int" ou receber um nulo "null". Qdo colocamos uma
+    "?" informamos que a variável pode receber um valor nulo)
+OBS2: Qdo a variável for "var" ela poderá sofrer alteração;
+OBS3: Valor definido e alterado durante a execução.
+
+val currentAge = 22
+val currentAge:Int?
+currentAge = null ou 22
+- Qdo a variável for "val" ela não poderá sofrer alteração;
+- Valor definido durante a execução.
+
+const val MIN_AGE = 16
+const val MAX_AGE = 68
+- Valor somente para consulta;
+- Qdo a variável for "const val" utiliza o padrão SNAKE_CASE e seu valor não sofrerá alteração;
+- Valor definido qdo da compilação (processo de build - construído).
+
+Operadores Aritméticos
+
+função		Expressão	Comando		Atribuição
+soma		a + b		a.plus(b)	a+=b
+subtração	a - b		a.minus(b)	a-=b
+multiplicação	a * b		a.times(b)	a*=b
+divisão		a / b		a.div(b)	a/=b
+resto		a % b		a.mod(b)	a%=b
+
+Operadores Comparativos
+
+função			Expressão	Comando
+maior/menor ou		a>b ou a<b	a.compareTo(b)>0 ou a.compareTo(b)<0
+maior/menor igual	a>=b ou a<=b	a.compareTo(b)>=0 ou a.compareTo(b)<=0
+igual			a==b		a.equals(b)
+diferente		a!=b		!(a.equals(b))
+
+* - Os comandos compareTo retornan os valores -1(menor que), 0(igual) ou 1(maior).
+* - Já os operadores retornam valores booleanos;
+* - O comando equals retorna um booleano.
+
+PAREI EMOPERADORES LÓGICOS E OPERADORES In E RANGE
+
+======
+
+18jun2022
+
+-Função ou Expressão que conté In, !In (com a "!", inverte a comparação), Range
+
+val numbers = listOf(3,9,0,1,2)
+print(12 in numbers)
+// false
+
+print(12 in 0..20)
+// true
+
+Exemplo:
+
+fun main() {
+    val bingo = listOf(8,6,34,2,13)
+    val number = (1..34).random()
+    println(number)
+    println(number in bingo)
+}
+
+---
+/**
+ const val tem que ser declarada, sempre antes da função MAIN.
+ */
+
+const val MIN_AGE = 16
+const val MAX_AGE = 68
+
+fun main() {
+    val age = (10..100).random()
+    println(age)
+    println(age in MIN_AGE..MAX_AGE)
+    println(age >= MIN_AGE && age <= MAX_AGE)
+}
+
+---
+
+String possui muitos métodos associados: Indexão, Concatenação, Comparação, Formatação
+
+Indexação
+
+- String como array;
+- First(), Last(), String.length, String[index];
+
+First ou [0] - vai pegar a primeira posição do array (1ª posição é sempre = 0)
+Last - vai pegar a última posição do array.
+length - -1...(uma range de 20 posições, ele vai de 0 até 19. A última posição é (20-1=19).
+
+Concatenação
+
+Para concatenar uma variável a uma String, os símbolos ${} devem ser inseridos.
+
+Exemplo:
+
+fun main() {
+    val welcome = "Bem vinda(o)"
+    var name = "luisa"
+    println("$welcome, ${name.capitalize()}!")
+}
+
+Capitalização de Strings:
+capitalize(), toUpperCase(), toLowerCase(), decapitalize()
+
+Remoção de Espaços:
+trimEnd(), trimStart(), trim()
+
+Substituição de Caracteres:
+replace(x,y)
+
+Formatação
+"padrão ${valor}".format(valor)
+
+---
+
+Empty (String cujo tamanho é "0") x Blank (métodos de comparação)
+
+- Se o tamanho da String (s.legth) for 0 está empty e blank;
+- Se o tamanho for > 0, mas todos os caracteres são espaços em branco, está blank mas não empty.
+
+Exemplo:
+
+fun main() {
+    val empty = ""
+    println(empty.length)
+    
+    val blank = "     "
+    println(blank.length)
+    
+    println(empty.isEmpty() && empty.isBlank())
+    println(blank.isEmpty() && blank.isBlank())
+    println(blank.isEmpty() || blank.isBlank())
+}
+
+---
+
+Funções
+
+- Prefixo fun nomeDaFunção(nome:Tipo):TipoRetorno{}
+- Funções anônimas, single-line, inline, extensões, Lambdas, ordem supeior
+- Documentação do kotlin, Code Labs do Google e aprofundar este conhecimento
+
+Exemplo: (Simplificando uma função)
+
+private fun getFullName(name:String, lastName:String):String{
+	val fullName = "$name $lastName"
+	return fullname
+}
+
+private fun getFullName(name:String, lastName:String):String{
+	return "$name $lastName"
+}
+
+private fun getFullName(name:String, lastName:String) = "$name $lastName"
+
+---
+
+Funções de Ordem Superior
+
+- Recebem outra função ou lambda por parâmetro;
+- Bastante úteis para a generalização de funções e tratamento de erros.
+
+ASSITIR NOVAMENTE: FUNÇÕES DE ORDEM SUPERIOR.
+
+------
+19jun2022
+
+fun main() {
+    
+    val y = calcularNovo(12,4){a,b -> a*b }
+    println("O valor calculado é: $y")
+}
+
+//Esse ou:
+//fun calcularNovo (n1:Int, n2:Int, calcular:(Int,Int)->Int):Int{
+    //val resultado = calcular(n1,n2)
+    //return resultado
+//}
+
+//Esse
+fun calcularNovo (n1:Int, n2:Int, calcular:(Int,Int)->Int)= calcular(n1,n2)
+
+---
+
+Atribuição - When
+
+fun main() {
+    
+    val grade = (0..10).random()
+    println(grade.getStudentStatus())
+}
+
+fun Int.getStudentStatus():String {
+    println("nota $this")
+    
+    return when(this){
+        in 0..4 -> "Reprovado"
+        in 5..7 -> "Mediana"
+        in 8..9 -> "Bom"
+        10 -> "Execelente"
+        else -> "Indefinido"
+    }
+}
+
+Atribuição - Elvis Operator
+
+fun main() {
+    
+var t:Int
+var x:Int? = null
+var w:Int? = 5
+t = x?:w?:-1
+
+println(t)
+
+}
+
+---
+
+fun main() {
+    
+var t:Int = 30
+var w:Int? = null
+var t:String? = x!!.getStudentStatus()
+
+println(t)
+
+}
+
+-----
+
+fun main() {
+    
+    var x:Int = 30
+	var w:Int? = null
+	var t:String? = x!!.getStudentStatus()
+
+	println(t)
+
+}
+
+fun Int.getStudentStatus():String {
+    println("nota $this")
+    
+    return when(this){
+        in 0..4 -> "Reprovado"
+        in 5..7 -> "Mediana"
+        in 8..9 -> "Bom"
+        10 -> "Execelente"
+        else -> "Indefinido"
+    }
+}
+
+----
+20jun2022
+
+class Carro() {
+
+	var velocidade = 0
+	var cambio = 0
+
+	constructor(
+		cor: String,
+		ano: Int,
+		marca: String
+	): this()
+
+	// Funções / Métodos
+	fun acelera(vel: Int = 10) {
+		this.velocidade = this.velocidade + vel
+	}
+
+	fun freia(vel: Int = 10) {
+		this.velocidade -= vel
+	}
+
+	fun trocaMarcha(marcha: Int) {
+		cambio = marcha
+	}
+}
+
+fun main() {
+	val car0 = Carro()
+	val car1 = Carro(ano = 2000, marca = "Ford", cor = "blue")
+	val car2 = Carro("2000", 3000, marca = "Volks")
+	val car3 = Carro(cor = "green", 4000, "Toyota")
+
+	car3.acelera()
+	car0.freia()
+	car1.trocaMarcha()
+}
+
+===============
+
+22jun2022
+
+Curso de Kotlin Básico - Douglas Mota
+
+Possuir conhecimento sore o gerenciamento, dependencias
+
+estrutura básica de uma função:
+
+fun max(a: Int, b: Int): Int {
+	return if (a > b) a else b
+}
+
+- diferença entre parâmetros para argumentos 
+- parâmetros é qdo vc define uma função, então vc tem uma lista de parâmetros uma declaração dos parâmetros
+- assinatura de uma função é a combinação do nome, da lista de parâmetros e do tipo de retorno
+- argumentos e qdo vc chama essa função já pronta e passa para esta função os seus argumentos, ou seja, neste
+  caso, os argumentos que vc vai passar para esta função o argumento A e argumento B os dois são do tipo inteiro
+- tipo de retorno sempre vem depois da declaração de parâmetros
+- corpo da função trecho de código dentro das chaves
+- expressão vs declaração: if no kotlin é uma expressão e não uma declaração (expressão temvalor próprio) uma expressão tem valor,
+  então podemos usar o return diretamente no meu if porque minha função já vai entender que retornar o resultado desta expressão.
+  a maioria das estruturas de controle são expressões
+  exceto os loops(for, do, do/while) - elas não são expressões então vc não pode usar o return junto com essas palavras chaves.
+- corpo de bloco vs corpo de expressão:
+  corpo de bloco é qdo uma função é escrita com seu corpo dentro de chaves {}. Tipo de retorno é obrigatório e declaração return
+  é obrigatório
+- corpo de expressão é qdo a função consiste de apenas uma expressão (valor)
+
+====
+
+fun main() {
+    println(max1(10, 5))
+}
+
+// Corpo de bloco
+fun max(a: Int, b: Int): Int {
+    return if (a > b) a else b 
+}
+
+//corpo de expressão
+fun max1(a: Int, b: Int): Int = if (a > b) a else b
+
+//corpo de expressão sem informar o tipo de retorno
+fun max1(a: Int, b: Int) = if (a > b) a else b
+
+===
+25jun2022
+
+FUNDAMENTOS DE ORIENTAÇÃO A OBJETOS COM KOTLIN
+
+- Apresentação do conteúso do curso
+- Determinando o projeto prático
+- Introdução a Orientação a objetos em Kotlin
+- Classe pública e classe privada
+- Entendendo sobre classes na prática e criando o projeto
+
+programação procedural
+programação orientada a objetos
+
+package one.digitalInnovation.digionebank
+
+class Pessoa {
+    var nome: String = "Jether"
+    var cpf: String = "123.123.123.11"
+
+    fun somar(n1: Int, n2: Int) {
+        val oi = (n1 + n2)
+        println(oi)
+    }
+}
+
+
+fun main() {
+    val jether = Pessoa()
+    println(jether.nome)
+    println(jether.cpf)
+    println("Meu nome é " + jether.nome + " e meu o meu CPF é " + jether.cpf)
+    jether.somar(5, 10)
+
+}
+
+====
+
+27jun2022 (começamos: O que são membros de uma classe)
+
+inner class (classe interna)
+
+Conceito de Data Class:
+- Armazenar dados que uma vez inicializado, a gente não possa mudá-lo (Armazenar um estado daquele objeto e não mais modificá-lo);
+- Criamos através daquela Data Class, objetos, onde teremos dados imutáveis) - Não modificar o estado do objeto;
+- Data Class não pode ser abstrata (não pode ser: Inner , Open). Ela pode implementar interfaces;
+- Todos os construtores primários, tem que ser inicializá-dos;
+- O objeto pode ser copiado, permitindo a partir daquele ponto copiado;
+- A partir de uma cópia, vc ininializa informações ou um estado novo;
+- Mas o estado anterior, permanece em uma referência na memória;
+- Ai vc passe a estar manipulando a cópia, ao longo de recursos e operações da nossa aplicação.
+
+Utilizamos do recurso chamado argumentos nomeados: 
+
+parei em: Introdução a Enum
+
+====
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

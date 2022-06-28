@@ -4,15 +4,18 @@ programa
 	funcao inicio()
 	{
 		cadeia frutas[4]
+		inteiro contador = 0
 
 		frutas[0] = "Maça"
 		frutas[1] = "Pera"
 		frutas[2] = "Uva"
 		frutas[3] = "Jaca"
 
-		//escreva("A fruta na posiçcao " + [0] + " é " + frutas[3])
-
-		escreva(frutas[3])
+		faca {
+			escreva("A fruta na posição " + contador + " é a fruta " + frutas[contador] + "\n")
+			contador++
+			
+		}enquanto (contador<=3)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -20,7 +23,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 232; 
+ * @POSICAO-CURSOR = 205; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
