@@ -502,6 +502,15 @@ Utilizamos do recurso chamado argumentos nomeados:
 parei em: Introdução a Enum
 
 ====
+28jun2022
+
+Enum - A própria enum representa o objeto em si
+companion object que nós dá a opção de criar funções estáticas, acessada via classe e não via instância do objeto
+é uma classe que tem a opção de construtor primário, a sua propriedade e objetos interno daquela enum são instâncias do prórpio
+tipo, dá própria classe que já declaram elas são dadas como singleton elas tem aquele único valor na se mexe é uma única instância
+
+Abstrações - 
+
 
 
 
