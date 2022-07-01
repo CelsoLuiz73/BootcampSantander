@@ -521,7 +521,7 @@ abstrata Funcionário
 
 30jun2022
 
-
+Parei na Aula Inaugural - Santander Bootcamp Mobile Developer
 
 
 
