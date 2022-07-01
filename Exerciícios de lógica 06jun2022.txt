@@ -511,6 +511,18 @@ tipo, dá própria classe que já declaram elas são dadas como singleton elas t
 
 Abstrações - 
 
+============
+29jun2022
+
+Eu tenho uma instância de Analista (Classe Analista) da subtipo Funcionário ou a classe concreta, que implementa a classe
+abstrata Funcionário
+
+======
+
+30jun2022
+
+
+
 
 
 
