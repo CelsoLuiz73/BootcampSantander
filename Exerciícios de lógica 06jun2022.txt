@@ -523,6 +523,64 @@ abstrata Funcionário
 
 Parei na Aula Inaugural - Santander Bootcamp Mobile Developer
 
+======
+
+Problemas: - santander@dio.me
+Suporte Técnico - /help.dio.me
+Plataforma - dio.rooms - interaja com os participantes desse bootcamp
+
+Camila Cavalcante - DIO
+Venilton Falvo Jr - DIO
+Renan Oliveira - DIO
+
+Duração até 08 Agosto
+Atividades Práticas
+4 Mentorias ao Vivo
+Fórum / Rooms
+80 horas (Mobile)
+120 horas (Full Stack)
+Micro Learning
+
+Stack Tecnológia Mobile
+- Git / Github
+- Android Studio
+- Android
+- Java
+- Kotlin
+
+Mentoria #2: Apresentação dos projetos de Tecnologia do Santander
+Mentoria #3: Praticando Orientação a Objetos com Kotlin
+Mentoria #4: Arquiteturas Mobile para Android
+Mentoria #5: Como se tornar um desenvolvedor de sucesso no Santander
+
+1 - Tirar foto da aula inaugural;
+2 - Publicar no Rooms e Linkedin com as hastags: #ContratoDeCompromisso, #SantanderFullStackDeveloper, #SantanderMobileDeveloper
+3 - Não esqueçam de marcar a DIO, os mentores e a empresa.
+
+===
+
+Pensamento Computacional - Juliana Mascarenhas
+Tech Education Specialist
+Sócia no @SimplificandoRedes
+Cientista de dados
+Desenvolvedora Java/Python
+Me Modelagem Computacional
+https://github.com/julianazanelatto
+
+- Introdução
+- Habilidade complementares
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

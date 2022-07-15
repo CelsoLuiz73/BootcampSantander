@@ -1,0 +1,19 @@
+Exclude IDE and project directories from antivirus scans: 
+C:\Users\CelsoLuiz73\AppData\Local\JetBrains\IdeaIC2022.1\demo\IdeaLearningProject 
+C:\Users\CelsoLuiz73\.gradle 
+C:\Users\CelsoLuiz73\AppData\Local\JetBrains\IdeaIC2022.1 Alternatively, add the IDE process as an exclusion.
+
+
+aplicando conceitos de coleções, arrays e listas
+
+=====
+val values = IntArray(5) - qdo criamos arrays ele espera um tamanho (capacidade).
+
+Criamos um array do tipo It e printamos.
+
+=============
+
+intArrayOf
+
+
+
